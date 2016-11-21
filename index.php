@@ -11,7 +11,7 @@
         <div id="root"></div>
         <?php wp_footer(); ?>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-        <script src="http://localhost:3000/assets/dist/app.bundle.js"></script>
+        <script src="https://sj-foundation-static.testing.softjourn.if.ua/app.bundle.js"></script>
 
     </body>
 </html>
