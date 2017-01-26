@@ -12,6 +12,9 @@ function wp_sj_enqueue() {
             'root' => esc_url_raw( rest_url() ),
             'nonce' => wp_create_nonce( 'wp_rest' ),
             'user' => wp_get_current_user(),
+            'logout_link' => wp_logout_url('/'),
         )
     );
 }
+
+update_option( 'permalink_structure', '/%postname%/' );
