@@ -10,6 +10,5 @@
         <div id="root"></div>
         <?php wp_footer(); ?>
         <script src="http://sj-foundation-static.testing.softjourn.if.ua/app.bundle.js"></script>
-<!--        <script src="http://localhost:3000/assets/dist/app.bundle.js"></script>-->
     </body>
 </html>

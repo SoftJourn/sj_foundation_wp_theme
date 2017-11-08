@@ -1,6 +1,6 @@
 <?php
 
-add_action( 'wp_enqueue_scripts', 'wp_sj_enqueue' );
+//add_action( 'wp_enqueue_scripts', 'wp_sj_enqueue' );
 add_theme_support( 'post-thumbnails' );
 
 
@@ -23,3 +23,11 @@ function wp_sj_enqueue() {
 }
 
 update_option( 'permalink_structure', '/%postname%/' );
+
+function remove_all_theme_styles() {
+    if ( is_page_template('template-landing.php') ) {
+        global $wp_styles;
+        $wp_styles->queue = array();
+    }
+}
+add_action('wp_print_styles', 'remove_all_theme_styles', 100);
