@@ -31,3 +31,13 @@ function remove_all_theme_styles() {
     }
 }
 add_action('wp_print_styles', 'remove_all_theme_styles', 100);
+
+function PREFIX_remove_scripts() {
+    wp_dequeue_style( 'screen' );
+    wp_deregister_style( 'screen' );
+
+    wp_dequeue_script( 'site' );
+    wp_deregister_script( 'site' );
+
+}
+add_action( 'wp_enqueue_scripts', 'PREFIX_remove_scripts', 20 );

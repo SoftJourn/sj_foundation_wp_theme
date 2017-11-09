@@ -7,7 +7,6 @@
     </head>
     <body>
         <div id="root"></div>
-        <?php wp_footer(); ?>
         <script src="http://sj-foundation-static.testing.softjourn.if.ua/app.bundle.js"></script>
     </body>
 </html>
